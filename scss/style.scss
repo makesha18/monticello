@@ -1,0 +1,161 @@
+    $text-color:#4b5562;
+    $title-color:#2c4058;
+    $white-color:#ffffff;
+    $body-font-family: "Open Sans",
+    sans-serif;
+    $second-font-family: 'Gothan',
+    normal;
+    @import "_fonts";
+    @import "_normalize";
+    @import "_layout";
+    @import "_elements";
+    body {
+        font: 700 18px/1.6 $body-font-family;
+    }
+    /* Layout */
+    
+    .ba-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1210px;
+    }
+    
+    .ba-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-size: cover;
+    }
+    
+    .ba-header-bar {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .ba-main-nav {
+        display: flex;
+        min-height: 60px;
+    }
+    
+    .ba-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        list-style: none;
+        color: $white-color;
+        font-weight: 500;
+        li {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $second-font-family;
+            height: 34px;
+            line-height: 34px;
+            letter-spacing: 1px;
+            text-align: center;
+            padding: 6px 30px 10px 10px;
+            text-transform: uppercase;
+        }
+        svg {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 1px solid $white-color;
+            border-radius: 50%;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: $white-color;
+    }
+    
+    .ba-intro {
+        background: #9c8e8e url(../img/main_Bg.png) 50% no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-size: cover;
+        color: $white-color;
+    }
+    
+    .ba-section-title {
+        margin: 0 0 10px;
+        font-size: 80px;
+        font-weight: 700;
+        letter-spacing: 4.8px;
+        text-transform: uppercase;
+        font-family: $second-font-family;
+        padding-top: 260px;
+        text-align: center;
+    }
+    
+    .ba-small-title {
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 5.4px;
+        text-align: center;
+    }
+    
+    .ba-gallery-title {
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        font: $second-font-family;
+    }
+    
+    .ba-gallery {
+        img {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: block;
+            width: 100%;
+            padding-left: 0;
+        }
+        .ba-button-gallery {
+            background: none;
+            border
+        }
+        #map {
+            width: 80%;
+            height: 600px;
+        }
+        /* Typography */
+        a,
+        input[type="submit"],
+        input[type="button"],
+        button {
+            transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+        }
+        input[type="submit"],
+        input[type="button"],
+        button,
+        .ba-button {
+            display: inline-block;
+        }
+        input[type="submit"]:hover,
+        input[type="button"]:hover,
+        button:hover,
+        .ba-button:hover {}
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="tel"],
+        textarea,
+        select {
+            transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="number"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus,
+        select:focus {}
+        textarea {}
+    }
